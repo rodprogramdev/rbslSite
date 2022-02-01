@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Cybersecurity">
+    <meta name="description" content="Web design and tech tutorials">
+    <meta name="author" content="Rodrigo Bonzerr S. Lopez">
+    <title>Homepage roprogramdev tutorial blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: palegoldenrod;
+            font-family: 'Lato', sans-serif;
+        }
+
+       /* p {
+            font-weight: bold;
+        }*/
+
+        /*--------------------------HEADER STYLES-------------------------------------*/
+        .header {
+            background-image: url("images/pch-vector.jpg");
+            background-size:cover;
+            height: 100vh;
+            position: relative;
+        }
+
+
+        .nav__list {
+            float: left;
+            list-style-type: none;
+            padding: 2% 2%;
+        }
+
+        .nav__list a{
+            text-decoration: none;
+            font-size:1.5rem;
+        }
+
+        .header__heading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        h1 {
+            font-size: 5rem;
+            color: #fff;
+            text-shadow: 5px 5px 5px black;
+        }
+
+
+        /*--------------------------ABOUT STYLES---------------------------------------*/
+        .about{
+            background-image: url("images/pch-vector-2.jpg");
+            background-size:cover;
+            background-position: 100% -20%;
+            height: 100vh;
+            text-align:center;
+            padding: 5rem;
+        }
+
+         .about__heading {
+            padding: 2rem;
+           
+        } 
+
+        .about__img{
+            height: 15rem;
+            width: 15rem;
+            border-radius:50%;
+            margin-top:2rem;
+            float:right;
+
+        }
+
+        /*--------------------------BLOG STYLES---------------------------------------*/
+        .blogPost{
+            height: 100vh;
+            background-image: url("images/J-comp-hacker-with-laptop-golden-credit-card.jpg");
+            background-size: cover;
+            text-align: left;
+            font-size: 1rem;
+            color:#fff;
+            padding: 2rem;
+        }
+
+        .blogPost__heading--1{
+            padding: 2% 2% 2% 0%;
+        }
+
+        .blogPost__heading--2{
+            padding: 0% 2% 2% 0%;
+        }
+
+
+        .blogPost__img--1{
+            float: left;
+            margin-right: 2rem;
+            border-radius:50%;
+            height: 100px;
+            width:100px;
+        }
+
+        .blogPost__img--2{
+            float: left;
+            margin-right: 2rem;
+            border-radius:50%;
+            height:100px;
+            width:100px;
+        }
+
+        hr{
+            width: 56%;
+            color: #fff;
+            margin-bottom: 5%;
+        }
+
+        aside{
+            float: right;
+            padding: 2rem;
+        }
+
+        aside ul li{
+            padding: 1rem;
+        }
+
+        blockquote{
+            display:inline-block;            
+            width: 60%;
+            padding: 0% 3%;
+        }
+
+        .blogPost a{
+            margin-left:3%;
+            text-decoration: none;
+            color: red;
+        }
+
+
+        /*--------------------------TABLE STYLES-------------------------------------*/
+        .table{
+            height: 80vh;
+            background-color: #fff;
+            padding-left:2.5rem;
+        }
+
+        .table__heading{
+            text-align: center;
+            padding: 2rem 2rem;
+        }
+
+        td,
+        th{
+            padding: 1.1rem .5rem;
+            font-size: .9rem;
+            margin:5px;
+            border: 1px solid #dddddd;
+        }
+
+        tr:nth-child(even){
+            background-color: #dddddd;
+        }
+
+       
+        /*--------------------------SUBSCRIBE STYLES-------------------------------------*/
+        .form{
+            background-image: url("images/creative-flat-lay-photo-workspace-desk.jpg");
+            background-size: cover;
+            padding-left: 5rem;
+            height: 100vh;
+        }
+
+        .form__heading{
+            border-bottom: 5px solid black;
+            width: 15%;
+            padding-top:5%;
+            margin-bottom: 5%;
+        }
+
+        .form__label--name{
+            padding-right: 27px;
+            font-weight: 700;
+        }
+
+        .form__label--email{
+            padding-right: 30px;
+            font-weight: 700;
+        }
+
+        .form__label--birthday{
+            padding-right: 10px;
+            font-weight: 700;
+        }
+
+        .form__label--comment{
+            font-weight: 700;
+        }
+
+        .form__label--gender{
+            font-weight: 700;
+            padding-right: 2%;
+        }
+
+        .form__submit{
+            padding:.5rem 2rem;
+            text-align: center;
+        }
+        /*--------------------------FOOTER STYLES-------------------------------------*/
+        .footer{
+            height: 25vh;
+            background-color: #000;
+            color: #fff;
+            padding: 2rem;
+        }
+
+        .footer__contact{
+            float: left;
+            margin-right: 15%;
+        }
+
+        .footer__contact ul li{
+            list-style-type:none;
+        }
+
+        .footer__credits a{
+            text-decoration:none;
+            color: #fff;
+            
+        }
+
+        .footer p{
+            font-size: .8rem;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!--****************************************HEADER SECTION**********************************-->
+    <header>
+        <div class="header" id="home">
+            <div class="header__nav">
+                <nav>
+                    <ul>
+                        <li class="nav__list"><a href="#home">Home</a></li>
+                        <li class="nav__list"><a href="#about">About</a></li>
+                        <li class="nav__list"><a href="#footer">Contact</a></li>
+                        <li class="nav__list"><a href="https://twitter.com/home" target="_blank">Twitter</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__heading">
+                <h1>HTML CHEAT SHEET TEMPLATE</h1>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!--****************************************ABOUT SECTION**********************************-->
+    <section>
+        <div class="about" id="about">
+            <h2 class="about__heading" >ABOUT</h2>
+            <p>I am <strong>RODRIGO BONZERR S. LOPEZ</strong>, and I am a graduate of Bachelor of Commerce Major in Computer Science, and my
+                hobbies are guitar playing, video games, Filipino martial arts, mountaineering, and anything interesting to
+                learn. This is an <em>HTML cheat sheet template</em> that is a result of the <strong>HTML crash course</strong> that I've built for my
+                YouTube channel. You can customize this and use it as a guide for building your own project.</p>
+    
+            
+            <img class="about__img" src="images/02-rodprogramdev-300PPi-cidratio.jpg" alt="THIS IS AN IMAGE">
+        </div>
+        
+    </section>
+    <!--****************************************BLOG SECTION**********************************-->
+    <section>
+        <div class="blogPost">
+            <h2>Blog Articles</h2>
+            <aside>
+                <h3>Tutorial Categories</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>CYBERSECURITY</li>
+                </ul>
+            </aside>
+            <article>
+                <h3 class="blogPost__heading--1">Computer talk 101</h3>
+                <img class="blogPost__img--1" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F07%2FComputer-Science-Background.jpg&f=1&nofb=1" alt="Computer science image" width="100" height="100">
+                <blockquote cite="https://rodprogramdev.wordpress.com/">
+                    Computer literacy nowadays is an important skill to be acquired by any individual.
+                    This is due to the fact that most common tasks for different jobs in any industries will
+                    require tasks that can be achieved through the use of a computer. From sending a 
+                    simple email to creating powerpoint presentations for a captured audience.
+                </blockquote><br>
+                <a href="#">Continue Reading</a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>  
+            </article>
+            <hr>
+            <article>
+                <h3 class="blogPost__heading--2"><abbr title="Cisco Certified Network Associate">CCNA</abbr> - Internet of Things</h3>
+                <img class="blogPost__img--2" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.o89uhOOmpmrdsAiHYqKCIgHaEK%26pid%3DApi&f=1" alt="Networking rj45 cable image">
+                <blockquote cite="https://www.rodprogramdev.wordpress.com">
+                    Hi! I'm Rodrigo Lopez and I would like to take the <abbr title="Cisco Certified Network Associate">CCNA</abbr> certification that is why
+                    I have committed to study networking on a daily basis for one hour. I will be applying
+                    a 100 day challenge of studying different Cisco Certified Network Associate concepts
+                    and I would like to document my journey through this blog.
+                  </blockquote><br>
+                  <a href="#">Continue Reading</a>
+            </article>
+        </div>
+    </section>
+    <!--****************************************TABLE SECTION**********************************-->
+    <section>
+        <div class="table">
+            <h2 class="table__heading">WORKSHOP SCHEDULES:</h2>
+            <table>
+                <thead>
+                    <tr>
+                       <th>Workshop Title</th>
+                       <th>Target Start Date</th>
+                       <th>Target End Date</th>
+                       <th>Requirements</th>
+                       <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML Crash Course</td>
+                        <td>November 20</td>
+                        <td>November 24</td>
+                        <td>Ages 7 to 16 and above. A Browser & desktop or laptop device.</td>
+                        <td>Remind students about day of orientation.</td>
+                    </tr>
+                    <tr>
+                        <td>Scratch Programming</td>
+                        <td>November 25</td>
+                        <td>November 30</td>
+                        <td>Age 7 to 16 and above. Install Scratch desktop or laptop.</td>
+                        <td>This is going to be an introductory workshop for total beginners.</td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Animation</td>
+                        <td>December 10</td>
+                        <td>December 11</td>
+                        <td>Age 7 to 16 and above. GIMP free photo editor.</td>
+                        <td>Students can use other available software for animation.</td>
+                    </tr>
+                    <tr>
+                        <td>Free English Tutorials</td>
+                        <td>December 20</td>
+                        <td>December 23</td>
+                        <td>Age 7 to 16 and above.</td>
+                        <td>Free workshop as a supplement to students learning programming.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </section>
+    <!--****************************************SUBSCRIBE SECTION**********************************-->
+    <section>
+        <div class="form">
+            <h2 class="form__heading">SUBSCRIBE</h2>
+            <form action="mailto:rodprogramdev@gmail.com" method="POST">
+               <label class="form__label--name" for="userName">Name:</label>
+               <input type="text" id="userName" placeholder="Enter your name here" >
+               <br>
+               <br>
+               <label class="form__label--email" for="email" >Email:</label>
+               <input type="email" id="email" name="email" placeholder="Enter your email here">
+               <br>
+               <br>
+               <label class="form__label--birthday" for="birthday">Birthday:</label>
+               <input type="date" name="birthday" id="birthday">
+               <br>
+               <br>
+               <label class="form__label--comment" for="comment">Comment:</label><br>
+               <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+               <br>
+               <br>
+               <label class="form__label--gender" for="gender">Gender:</label>
+               <select name="gender" id="gender">
+                   <option value="male">Male</option>
+                   <option value="female">Female</option>
+                   <option value="others">Others</option>
+               </select>
+               <br>
+               <br>
+               <input type="submit" class="form__submit" name="submit" value="SUBMIT"><br>
+               <br>
+             <!--  <button type="button" onclick=" helloWorld();">CLICK ME!</button>-->
+            </form>
+        </div>
+    </section>
+    <!--****************************************FOOTER SECTION**********************************-->
+    <footer>
+        <div class="footer" id="footer">
+            <div class="footer__contact">
+                <h3>CONTACT INFORMATION</h3>
+                <ul>
+                    <li>Facebook: Your Facebook page</li>
+                    <li>Twitter: Your Twitter account</li>
+                    <li>Instagram: Your Instagram account</li>
+                    <li>Discord: Your Discord server</li>
+                    <li>Email: youremail@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer__credits">
+                <a href="https://www.freepik.com/vectors/hand">Hand vector created by pch.vector - www.freepik.com</a><br>
+                <a href="https://www.freepik.com/vectors/computer">Computer vector created by pch.vector - www.freepik.com</a><br>
+                <a href="https://www.freepik.com/photos/cards">Cards photo created by jcomp - www.freepik.com</a><br>
+                <a href="https://www.freepik.com/photos/background">Background photo created by tirachardz - www.freepik.com</a><br>
+                <p>Copyright&copy;2021, Rodrigo Bonzerr S. Lopez, HTML static site. It's completely ok for you to use this 
+                    template. <br> A credit to the owner will be highly appreciated. 
+                </p>
+            </div>
+        </div>
+
+    </footer>
+    <!--
+        <script>
+            function helloWorld(){
+                alert("Hello WORLD!");
+            }
+        </script>
+        
+    -->
+    
+
+</body>
+
+</html>
